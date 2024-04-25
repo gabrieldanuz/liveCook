@@ -33,7 +33,7 @@ export default function Index() {
             key={index}
             name="Tomate"
             image=""
-            selected
+            selected={selected.includes(String(index))}
             onPress={() => handleToggleSelected(String(index))}
           />
         ))}

@@ -14,7 +14,10 @@ export function Ingredient({
   ...rest
 }: IngredientsProps & PressableProps) {
   return (
-    <Pressable style={styles.container} {...rest}>
+    <Pressable
+      style={[styles.container, selected && styles.selected]}
+      {...rest}
+    >
       <Image style={styles.image} />
       <Text style={styles.title}>Maça</Text>
     </Pressable>
